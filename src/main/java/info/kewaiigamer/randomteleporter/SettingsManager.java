@@ -50,9 +50,6 @@ public class SettingsManager {
         if (config.getString("language").equalsIgnoreCase("pt")) {
             return "pt";
         }
-        if (config.getString("language").equalsIgnoreCase("en")) {
-            return "en";
-        }
         if (config.getString("language").equalsIgnoreCase("fr")) {
             return "fr";
         }

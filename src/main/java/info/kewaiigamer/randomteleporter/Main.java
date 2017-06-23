@@ -1,6 +1,5 @@
 package info.kewaiigamer.randomteleporter;
 
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,9 +24,7 @@ public class Main extends JavaPlugin implements Listener {
         reloadConfig();
 
         //Logging
-        if (settings.getLanguage().equalsIgnoreCase("en")) {
-            getLogger().info(getName() + " " + getDescription().getVersion() + " has been disabled");
-        } else if (settings.getLanguage().equalsIgnoreCase("fr")) {
+        if (settings.getLanguage().equalsIgnoreCase("fr")) {
             getLogger().info(getName() + " " + getDescription().getVersion() + " a été désactivée");
         } else if (settings.getLanguage().equalsIgnoreCase("pt")) {
             getLogger().info(getName() + " " + getDescription().getVersion() + " foi desativado");
@@ -40,9 +37,7 @@ public class Main extends JavaPlugin implements Listener {
         getCommand("tpran").setExecutor(new RandomTeleportCommand());
         settings.setup(this);
         //Logging
-        if (settings.getLanguage().equalsIgnoreCase("en")) {
-            getLogger().info(getName() + " " + getDescription().getVersion() + " has been enabled");
-        } else if (settings.getLanguage().equalsIgnoreCase("fr")) {
+        if (settings.getLanguage().equalsIgnoreCase("fr")) {
             getLogger().info(getName() + " " + getDescription().getVersion() + " a été activée");
         } else if (settings.getLanguage().equalsIgnoreCase("pt")) {
             getLogger().info(getName() + " " + getDescription().getVersion() + " foi ativado");

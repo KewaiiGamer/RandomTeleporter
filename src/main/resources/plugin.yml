@@ -6,3 +6,6 @@ commands:
   tpran:
     description: Teleports to a random location
     usage: /tpran
+permissions:
+  randomteleport:
+    description: Player can teleport
