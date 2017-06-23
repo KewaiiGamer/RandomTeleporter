@@ -50,12 +50,9 @@ public class RandomTeleportCommand implements CommandExecutor {
                         }
                         p.setGameMode(gameMode);
 
-                        if (settings.getLanguage().equalsIgnoreCase("en")) {
-                            p.sendMessage("You have been teleported to X: " + x + " Y: " + y + " Z: " + z);
-                            p.sendMessage("Your gamemode has been changed to " + gameMode.name());
-                        } else if (settings.getLanguage().equalsIgnoreCase("fr")) {
-                            p.sendMessage("Vous avez été téléporté pour X: " + x + " Y: " + y + " Z: " + z);
-                            p.sendMessage("Votre gamemode a été changé pour " + gameMode.name());
+                        if (settings.getLanguage().equalsIgnoreCase("fr")) {
+                            p.sendMessage("Vous avez été téléporté(e)s pour X: " + x + " Y: " + y + " Z: " + z);
+                            p.sendMessage("Votre gamemode a été changé(e)s pour " + gameMode.name());
                         } else if (settings.getLanguage().equalsIgnoreCase("pt")) {
                             p.sendMessage("Foste teleportado para X: " + x + " Y: " + y + " Z: " + z);
                             p.sendMessage("O teu modo de jogo foi mudado para " + gameMode.name());
