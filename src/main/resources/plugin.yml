@@ -1,0 +1,8 @@
+name: RandomTeleporter
+version: 1.0.0
+author: KewaiiGamer
+main: info.kewaiigamer.randomteleporter.Main
+commands:
+  tpran:
+    description: Teleports to a random location
+    usage: /tpran
